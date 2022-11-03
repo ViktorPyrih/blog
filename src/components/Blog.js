@@ -3,7 +3,7 @@ import ScrollableLink from "./ScrollableLink";
 
 function Blog({blog}) {
     const style = {
-        background: `url(${blog.image})`
+        background: `url(${blog.image}) round`
     }
     return (
         <li className="blog">

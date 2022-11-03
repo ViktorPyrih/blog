@@ -11,7 +11,7 @@
     box-sizing: border-box;
     width: 592px;
     height: 280px;
-    padding-top: 152px;
+    padding-top: 192px;
 }
 .blog-heading-details-container {
     box-sizing: border-box;
@@ -59,6 +59,7 @@
     .blog-heading {
         width: 343px;
         height: 240px;
+        padding-top: 152px;
     }
 }
 
