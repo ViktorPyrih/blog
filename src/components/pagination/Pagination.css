@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+.page-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    border-top: 1px solid #EAECF0;
+}
+.page-navigation-items {
+    display: flex;
+}
+
+/* Mobile style start */
+
+.page-navigation__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #344054;
+}
+
+/* Mobile style end */

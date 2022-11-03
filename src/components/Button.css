@@ -1,0 +1,25 @@
+.btn {
+    box-sizing: border-box;
+    padding: 8px 14px;
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
+.btn-previous {
+    width: 115px;
+}
+.btn-next {
+    width: 88px;
+}
+
+/* Mobile style start */
+
+@media screen and (max-width: 700px) {
+    .btn-previous, .btn-next {
+        width: 36px;
+        padding: 8px;
+    }
+}
+
+/* Mobile style end */

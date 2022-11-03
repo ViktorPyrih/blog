@@ -1,0 +1,140 @@
+/* Reset style start */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset style end */
+
+
+
+/* Main style start */
+
+body {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #FFFFFF;
+}
+a {
+    color: #475467;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+button:not(button[disabled]):hover {
+    border-width: 3px;
+}
+a:hover, button:not(button[disabled]):hover {
+    cursor: pointer;
+}
+.background_white {
+    background: #F9FAFB;
+    border-bottom: 1px solid #F2F4F7;
+}
+.background_blue {
+    background: #1D2939;
+}
+.wrapper {
+    width: 1216px;
+    margin: 0 auto;
+}
+.color_white {
+    color: #FFFFFF;
+}
+.color_black {
+    color: #000000;
+}
+.paragraph {
+    font-size: 14px;
+    line-height: 20px;
+}
+.paragraph_color_gray {
+    color: #475467;
+}
+.paragraph_font-weight_600 {
+    font-weight: 600;
+    color: #344054;
+}
+.title {
+    font-weight: 600;
+    color: #101828;
+}
+.title-primary {
+    font-size: 30px;
+    line-height: 38px;
+}
+.title-secondary {
+    font-size: 24px;
+    line-height: 32px;
+}
+.tag {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6941C6;
+    text-align: center;
+}
+.arrow {
+    font-weight: 1000;
+    font-size: 20px;
+}
+.width_280px {
+    width: 280px;
+}
+.width_100 {
+    width: 100%;
+}
+
+/* Main style end */
+
+/* Mobile style start */
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        width: 336px;
+    }
+}
+
+/* Mobile style end */

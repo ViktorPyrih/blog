@@ -1,0 +1,14 @@
+.home-container {
+    padding-top: 32px;
+    padding-bottom: 48px;
+    min-height: 325px;
+}
+.home-container-heading {
+    margin-bottom: 32px;
+}
+@media screen and (min-width: 700px) {
+    .home-container-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+}

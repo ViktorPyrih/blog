@@ -1,0 +1,11 @@
+.tags-list {
+    display: flex;
+    align-items: center;
+    padding: 4px 10px 4px 4px;
+    gap: 8px;
+    width: fit-content;
+    background: #F9F5FF;
+    mix-blend-mode: multiply;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
