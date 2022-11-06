@@ -16,14 +16,32 @@
 
 @media screen and (max-width: 700px) {
     .header {
+        display: flex;
+        justify-content: space-between;
         height: 72px;
     }
 }
-.header_menu-link {
-    display: flex;
-    align-items: center;
-    float: right;
-    height: 100%;
+.header-menu__btn {
+    background-color: transparent;
+    border: none;
+}
+.header-menu__items {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100px;
+    top: 60px;
+    right: 0;
+    border: 3px solid #475467;
+    border-radius: 5px;
+    text-align: center;
+}
+.menu__link {
+    display: block;
+    width: 100%;
+}
+.menu__link_active {
+    background-color: #475467;
+    color: #F9FAFB;
 }
 
 /* Mobile style end */

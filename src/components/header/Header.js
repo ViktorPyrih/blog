@@ -1,10 +1,11 @@
 import './Header.css';
+import menuIcon from "../../assets/menu.svg";
 import Logo from "../Logo";
-import NavBar from "../navigation/NavBar";
+import NavBar, {NAV_LINKS} from "../navigation/NavBar";
 import SignInUpBar from "../navigation/SignInUpBar";
 import DeviceAware from "../DeviceAware";
-import menuIcon from "../../assets/menu.svg";
-import {Link} from "react-router-dom";
+import {Menu} from "@headlessui/react";
+import NavLink from "../navigation/NavLink";
 
 function Header() {
     const standardNav = (
@@ -12,11 +13,28 @@ function Header() {
             <NavBar/>
             <SignInUpBar/>
         </div>
-    )
+    );
     const mobileNav = (
-        <Link to="/" className="header_menu-link">
-            <img src={menuIcon} alt="Menu" className="header_menu-img"/>
-        </Link>
+        <Menu>
+            <Menu.Button className="header-menu__btn">
+                <img src={menuIcon} alt="Menu" className="header-menu__img"/>
+            </Menu.Button>
+            <Menu.Items className="header-menu__items background_white" as="nav">
+                {
+                    NAV_LINKS.map((link, i) => (
+                        <Menu.Item key={i}>
+                            {
+                                ({active}) => (
+                                    <NavLink to={link.to} className={`menu__link ${active && "menu__link_active"}`}>
+                                        {link.label}
+                                    </NavLink>
+                                )
+                            }
+                        </Menu.Item>
+                    ))
+                }
+            </Menu.Items>
+        </Menu>
     );
     return (
         <header className="background_white">
