@@ -4,19 +4,23 @@ import NavLink from "./NavLink";
 const NAV_LINKS = [
     {
         to: "/",
-        label: "Home"
+        label: "Home",
+        path: "/"
     },
     {
         to: "/",
-        label: "Products"
+        label: "Products",
+        path: "/products"
     },
     {
         to: "/resources",
-        label: "Resources"
+        label: "Resources",
+        path: "/resources"
     },
     {
         to: "/",
-        label: "Pricing"
+        label: "Pricing",
+        path: "/pricing"
     },
 ];
 

@@ -24,8 +24,8 @@ function Header() {
                     NAV_LINKS.map((link, i) => (
                         <Menu.Item key={i}>
                             {
-                                ({active}) => (
-                                    <NavLink to={link.to} className={`menu__link ${active && "menu__link_active"}`}>
+                                () => (
+                                    <NavLink to={link.to} className={`menu__link ${isLinkCurrent(link) && "menu__link_active"}`}>
                                         {link.label}
                                     </NavLink>
                                 )
@@ -44,6 +44,10 @@ function Header() {
             </div>
         </header>
     );
+}
+
+function isLinkCurrent(link) {
+    return link.path === window.location.pathname;
 }
 
 export default Header;

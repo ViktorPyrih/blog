@@ -23,7 +23,7 @@ function Home() {
             <Header/>
             <div className="home-container wrapper">
                 <div className="home-container-heading">
-                    <Search onKeyUp={e => setSearch(e.target.value)}/>
+                    <Search onInput={e => setSearch(e.target.value)}/>
                     <SortSelect sort={sort} onChange={setSort}/>
                 </div>
                 <Pagination items={searchedBlogs} renderItem={(blog, i) => <Blog blog={blog} key={i}/>}/>

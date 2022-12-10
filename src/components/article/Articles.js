@@ -37,7 +37,7 @@ function Articles({allArticles}) {
     return (
         <div className="articles-container wrapper">
             <Categories categories={allArticles.flatMap(article => article.tags)} activeCategory={activeCategory}>
-                <Search onKeyUp={e => setSearch(e.target.value)}/>
+                <Search onInput={e => setSearch(e.target.value)}/>
             </Categories>
             {
                 isNotEmpty(articles) && (
