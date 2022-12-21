@@ -17,7 +17,9 @@ const OPTIONS = {
 function SortSelect({sort, onChange}) {
     return (
         <Listbox value={sort} onChange={onChange} className="sort-select" as="div">
-            <Listbox.Button className="sort-select__btn">{sort.label}</Listbox.Button>
+            <Listbox.Button className="sort-select__btn">
+                {sort.label}
+            </Listbox.Button>
             <Listbox.Options className="sort-select__items">
                 {
                     Object.values(OPTIONS).map((option, i) => (
